@@ -1,0 +1,99 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f3f5f9;
+    display: flex;
+    justify-content: center;
+    padding: 40px;
+}
+
+.form-wrapper {
+    background: #fff;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 600px;
+    padding: 28px;
+    border: 1px solid #e2e6f0;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+.form-title {
+    font-size: 24px;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.form-description {
+    font-size: 14px;
+    text-align: center;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+.required {
+    color: red;
+}
+
+.form-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 6px;
+    font-weight: 500;
+}
+
+input, select, textarea {
+    padding: 10px;
+    border: 1px solid #cfd4e5;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #4c6fff;
+    box-shadow: 0 0 0 2px rgba(76, 111, 255, 0.2);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 80px;
+}
+
+.gender-options {
+    display: flex;
+    gap: 12px;
+}
+
+.submit-btn {
+    margin-top: 10px;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    border: none;
+    border-radius: 6px;
+    background: #4c6fff;
+    color: #fff;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.1s, box-shadow 0.2s;
+}
+
+.submit-btn:hover {
+    background: #3b54d4;
+    transform: translateY(-1px);
+    box-shadow: 0 6px 12px rgba(59, 84, 212, 0.3);
+}
+
+.submit-btn:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
